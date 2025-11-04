@@ -13,7 +13,7 @@
 
 .card{
     /* background: rgb(9, 5, 37); */
-    block-size: 115px;
+    /* block-size: 115px; */
     display: flex;
     gap: 16px;
     padding: 16px;

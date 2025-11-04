@@ -4,6 +4,7 @@
     overflow: hidden;
     overflow-y: auto;
     border-inline-end: 1px solid #ccc;
+    white-space: nowrap;
 }
 
 .sidebar__container{
