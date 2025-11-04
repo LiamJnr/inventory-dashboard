@@ -19,6 +19,7 @@
     --top-bar-svg: 28px;
     
     /* color styles */
+    --text-pri: oklch(18.674% 0.00002 271.152);
     --body-bg: oklch(97.015% 0.00011 271.152);
     --sidebar-bg: oklch(96.715% 0.00011 271.152);
     --svg-gray: oklch(56.241% 0.00006 271.152);
