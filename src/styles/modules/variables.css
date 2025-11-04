@@ -1,0 +1,52 @@
+:root{
+    
+    /* spacing styles */
+    --sidebar-padding-inline: 20px;
+
+    /* font size styles */
+    --menu-font-size: 12px;
+    --tab-font-size: 15px;
+    --subtab-font-size: 14px;
+    --card-data-font-size: 36px;
+    --payroll-deadline-font-size: 20px;
+
+    /* svg sizes */
+    --payrun-icon: 18px;
+    --deadline-icon: 24px;
+    --brand-logo-cntnr: 32px;
+    --brand-logo: 26px;
+    --metric-card-svg: 20px;
+    --top-bar-svg: 28px;
+    
+    /* color styles */
+    --body-bg: oklch(97.015% 0.00011 271.152);
+    --sidebar-bg: oklch(96.715% 0.00011 271.152);
+    --svg-gray: oklch(56.241% 0.00006 271.152);
+    --off-white: oklch(99.731% 0.00143 285.185);
+    --metric-cards-bg: oklch(15.066% 0.06464 282.262);
+    --icon-cntnr-bg: oklch(24.64% 0.02111 260.588);
+    --card-data-font-color: oklch(91.727% 0.00683 286.044);
+    --uptime-color: oklch(87.312% 0.24813 148.499);
+    --payroll-alert-border: oklch(77.465% 0.10223 19.609);
+    --payroll-alert-icon: oklch(54.431% 0.18305 25.712);
+    --payroll-alert-color: oklch(42.267% 0.17345 29.223);
+    --payroll-alert-bg: oklch(94.515% 0.02742 17.433);
+    --payroll-deadline-color: oklch(14.795% 0.12899 29.223);
+    --payroll-deadline-icon: oklch(66.113% 0.01069 17.042);
+
+    /* progressbar */
+        /* font-sizes */
+    --description-size: 0.84rem;
+    --h4-size: 0.9rem;
+
+    /* Spacing */
+    --spacing-description: 0.16rem;
+
+    /* Background */
+    --card-background: oklch(99.04% 0.00463 258.641);
+    --body-background: hsl(101, 31%, 76%);
+    --status-background: hsl(199, 100%, 89%);
+    --status-color: hsl(199, 100%, 29%);
+    --progress-ctnrbackground: hsl(138, 100%, 93%);
+    --progress-color: hsl(138, 100%, 22%);
+}

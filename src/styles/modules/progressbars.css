@@ -1,0 +1,67 @@
+.perf-metric-sctn{
+    border: 1px solid lightgray;
+    border-radius: 8px;
+    padding: 16px;
+}
+
+.perf_metrics__section{
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+}
+
+.perf-metrics__cntnr{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.perf-metric_card{
+    background: var(--card-background);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex: 1;
+    /* inline-size: 506px; */
+    /* background: red; */
+    /* padding: 12px; */
+}
+
+.top_section{
+    /* background: rgb(91, 91, 138); */
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.top_section h3{
+    color: #7E7E7E;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.top_section p{
+    color: #222222;
+    font-weight: 600;
+}
+
+.bottom_section{
+    background: var(--card-background);
+    /* background: rgb(199, 199, 199); */
+}
+
+.progressbar_container{
+    background: var(--progress-ctnrbackground);
+    block-size: 6px;
+    border-radius: 24px;
+    overflow: hidden;
+}
+
+.progressbar{
+    block-size: 100%;
+    width: 0%;
+    background: hsl(115, 100%, 36%);
+    position: relative;
+    border-radius: 24px;
+    transition: width 1000ms ease-in-out;
+}

@@ -1,0 +1,56 @@
+.search-inventory-sctn{
+    /* background: red; */
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    /* padding-block: 12px; */
+}
+
+.search-form__cntnr{
+    flex: 1 ;
+    display: flex;
+    justify-content: center;
+}
+
+.search-form{
+    /* background: yellow; */
+    display: flex;
+    align-items: center;
+    inline-size: 100%;
+    justify-content: center;
+}
+
+.search-form input{
+    border: 1px solid gainsboro;
+    border-right: none;
+    block-size: 42px;
+    inline-size: 60%;
+    padding-inline-start: 36px;
+    outline: none;
+    border-bottom-left-radius: 6px;
+    border-top-left-radius: 6px;
+    transition: border 0.25s ease-in-out;
+    /* padding-block: 16px; */
+}   
+
+.search-form input::placeholder{
+    color: rgb(128, 128, 128);
+    font-size: 14px;
+    font-style: italic;
+}
+
+.search-form input:focus-within{
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+
+}
+
+.inventory-search__btn{
+    inline-size: 102px;
+    background: black;
+    color: white;
+    block-size: 42px;
+    border-bottom-right-radius: 6px;
+    border-top-right-radius: 6px;
+}

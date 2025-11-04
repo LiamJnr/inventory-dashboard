@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar</title>
+    <link rel="stylesheet" href="./src/styles/styles.css">
+</head>
+<body>
+    <aside class="sidebar">
+        <div class="sidebar__container">
+            <div class="header__sidebar">
+                <div class="logo__menu">
+                    <div class="brand-logo">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M227.31,80.23,175.77,28.69A16.13,16.13,0,0,0,164.45,24H91.55a16.13,16.13,0,0,0-11.32,4.69L28.69,80.23A16.13,16.13,0,0,0,24,91.55v72.9a16.13,16.13,0,0,0,4.69,11.32l51.54,51.54A16.13,16.13,0,0,0,91.55,232h72.9a16.13,16.13,0,0,0,11.32-4.69l51.54-51.54A16.13,16.13,0,0,0,232,164.45V91.55A16.13,16.13,0,0,0,227.31,80.23ZM120,80a8,8,0,0,1,16,0v56a8,8,0,0,1-16,0Zm8,104a12,12,0,1,1,12-12A12,12,0,0,1,128,184Z"></path></svg>
+                    </div>
+                    <span class="brand-name">stockpilot</span>
+                </div>
+                <button type="button" id="collapse-btn" class="sidebar__collapse-btn" title="sidebar__collapse-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M205.66,202.34a8,8,0,0,1-11.32,11.32l-80-80a8,8,0,0,1,0-11.32l80-80a8,8,0,0,1,11.32,11.32L131.31,128ZM51.31,128l74.35-74.34a8,8,0,0,0-11.32-11.32l-80,80a8,8,0,0,0,0,11.32l80,80a8,8,0,0,0,11.32-11.32Z"></path></svg>
+                </button>
+            </div>
+            <div class="collapsed-divider"></div>
+            <div class="sidebar__main-menu tabs-menu">
+                <h3 class="tabs-menu-name">MAIN MENU</h3>
+                <div class="dropdowns__container">
+                    <div class="dropdown__tab">
+                        <button type="button" class="dropdown-btn">
+                            <div class="tab__icon-text">
+                                <div class="section__tab-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M219.31,108.68l-80-80a16,16,0,0,0-22.62,0l-80,80A15.87,15.87,0,0,0,32,120v96a8,8,0,0,0,8,8H216a8,8,0,0,0,8-8V120A15.87,15.87,0,0,0,219.31,108.68ZM208,208H48V120l80-80,80,80Z"></path></svg>
+                                </div>
+                                <span class="section__tab-text">Dashboard</span>
+                            </div>
+                            <div class="dropdown-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="currentColor" fill="none">
+                                    <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </button>
+                        <ul class="dropdown">
+                            <li class="dropdown_content">
+                                <a href="#">School Fees</a>
+                                <a href="#">Discount List</a>
+                                <a href="#">Credit List</a>
+                                <a href="#">Canteen Fees</a>
+                                <a href="#">Store Sales</a>
+                                <a href="#">Expenses</a>
+                                <a href="#">Banks</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="dropdown__tab">
+                        <button type="button" class="dropdown-btn">
+                            <div class="tab__icon-text">
+                                <div class="section__tab-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M168,152a8,8,0,0,1-8,8H96a8,8,0,0,1,0-16h64A8,8,0,0,1,168,152Zm-8-40H96a8,8,0,0,0,0,16h64a8,8,0,0,0,0-16Zm56-64V216a16,16,0,0,1-16,16H56a16,16,0,0,1-16-16V48A16,16,0,0,1,56,32H92.26a47.92,47.92,0,0,1,71.48,0H200A16,16,0,0,1,216,48ZM96,64h64a32,32,0,0,0-64,0ZM200,48H173.25A47.93,47.93,0,0,1,176,64v8a8,8,0,0,1-8,8H88a8,8,0,0,1-8-8V64a47.93,47.93,0,0,1,2.75-16H56V216H200Z"></path></svg>
+                                </div>
+                                <span class="section__tab-text">Tasks</span>
+                            </div>
+                            <div class="dropdown-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="currentColor" fill="none">
+                                    <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </button>
+                        <ul class="dropdown">
+                            <li class="dropdown_content">
+                                <a href="#">School Fees</a>
+                                <a href="#">Discount List</a>
+                                <a href="#">Credit List</a>
+                                <a href="#">Canteen Fees</a>
+                                <a href="#">Store Sales</a>
+                                <a href="#">Expenses</a>
+                                <a href="#">Banks</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="dropdown__tab">
+                        <button type="button" class="dropdown-btn">
+                            <div class="tab__icon-text">
+                                <div class="section__tab-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M208,32H184V24a8,8,0,0,0-16,0v8H88V24a8,8,0,0,0-16,0v8H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32ZM72,48v8a8,8,0,0,0,16,0V48h80v8a8,8,0,0,0,16,0V48h24V80H48V48ZM208,208H48V96H208V208Zm-96-88v64a8,8,0,0,1-16,0V132.94l-4.42,2.22a8,8,0,0,1-7.16-14.32l16-8A8,8,0,0,1,112,120Zm59.16,30.45L152,176h16a8,8,0,0,1,0,16H136a8,8,0,0,1-6.4-12.8l28.78-38.37A8,8,0,1,0,145.07,132a8,8,0,1,1-13.85-8A24,24,0,0,1,176,136,23.76,23.76,0,0,1,171.16,150.45Z"></path></svg>
+                                </div>
+                                <span class="section__tab-text">Calendar</span>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="dropdown__tab">
+                        <button type="button" class="dropdown-btn">
+                            <div class="tab__icon-text">
+                                <div class="section__tab-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160Zm109.94-52.79a8,8,0,0,0-3.89-5.4l-29.83-17-.12-33.62a8,8,0,0,0-2.83-6.08,111.91,111.91,0,0,0-36.72-20.67,8,8,0,0,0-6.46.59L128,41.85,97.88,25a8,8,0,0,0-6.47-.6A112.1,112.1,0,0,0,54.73,45.15a8,8,0,0,0-2.83,6.07l-.15,33.65-29.83,17a8,8,0,0,0-3.89,5.4,106.47,106.47,0,0,0,0,41.56,8,8,0,0,0,3.89,5.4l29.83,17,.12,33.62a8,8,0,0,0,2.83,6.08,111.91,111.91,0,0,0,36.72,20.67,8,8,0,0,0,6.46-.59L128,214.15,158.12,231a7.91,7.91,0,0,0,3.9,1,8.09,8.09,0,0,0,2.57-.42,112.1,112.1,0,0,0,36.68-20.73,8,8,0,0,0,2.83-6.07l.15-33.65,29.83-17a8,8,0,0,0,3.89-5.4A106.47,106.47,0,0,0,237.94,107.21Zm-15,34.91-28.57,16.25a8,8,0,0,0-3,3c-.58,1-1.19,2.06-1.81,3.06a7.94,7.94,0,0,0-1.22,4.21l-.15,32.25a95.89,95.89,0,0,1-25.37,14.3L134,199.13a8,8,0,0,0-3.91-1h-.19c-1.21,0-2.43,0-3.64,0a8.08,8.08,0,0,0-4.1,1l-28.84,16.1A96,96,0,0,1,67.88,201l-.11-32.2a8,8,0,0,0-1.22-4.22c-.62-1-1.23-2-1.8-3.06a8.09,8.09,0,0,0-3-3.06l-28.6-16.29a90.49,90.49,0,0,1,0-28.26L61.67,97.63a8,8,0,0,0,3-3c.58-1,1.19-2.06,1.81-3.06a7.94,7.94,0,0,0,1.22-4.21l.15-32.25a95.89,95.89,0,0,1,25.37-14.3L122,56.87a8,8,0,0,0,4.1,1c1.21,0,2.43,0,3.64,0a8.08,8.08,0,0,0,4.1-1l28.84-16.1A96,96,0,0,1,188.12,55l.11,32.2a8,8,0,0,0,1.22,4.22c.62,1,1.23,2,1.8,3.06a8.09,8.09,0,0,0,3,3.06l28.6,16.29A90.49,90.49,0,0,1,222.9,142.12Z"></path></svg>
+                                </div>
+                                <span class="section__tab-text">Settings</span>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="dropdown__tab">
+                        <button type="button" class="dropdown-btn">
+                            <div class="tab__icon-text">
+                                <div class="section__tab-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216Zm16-40a8,8,0,0,1-8,8,16,16,0,0,1-16-16V128a8,8,0,0,1,0-16,16,16,0,0,1,16,16v40A8,8,0,0,1,144,176ZM112,84a12,12,0,1,1,12,12A12,12,0,0,1,112,84Z"></path></svg>
+                                </div>
+                                <span class="section__tab-text">Help & Center</span>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="collapsed-divider"></div>
+            <div class="sidebar__team-management tabs-menu">
+                <h3 class="tabs-menu-name">TEAM MANAGEMENT</h3>
+                <div class="dropdowns__container">
+                    <div class="dropdown__tab">
+                        <button type="button" class="dropdown-btn">
+                            <div class="tab__icon-text">
+                                <div class="section__tab-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M207.06,72.67A111.24,111.24,0,0,0,128,40h-.4C66.07,40.21,16,91,16,153.13V176a16,16,0,0,0,16,16H224a16,16,0,0,0,16-16V152A111.25,111.25,0,0,0,207.06,72.67ZM224,176H119.71l54.76-75.3a8,8,0,0,0-12.94-9.42L99.92,176H32V153.13c0-3.08.15-6.12.43-9.13H56a8,8,0,0,0,0-16H35.27c10.32-38.86,44-68.24,84.73-71.66V80a8,8,0,0,0,16,0V56.33A96.14,96.14,0,0,1,221,128H200a8,8,0,0,0,0,16h23.67c.21,2.65.33,5.31.33,8Z"></path></svg>
+                                </div>
+                                <span class="section__tab-text">Performance</span>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="dropdown__tab">
+                        <button type="button" class="dropdown-btn">
+                            <div class="tab__icon-text">
+                                <div class="section__tab-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M200,32H163.74a47.92,47.92,0,0,0-71.48,0H56A16,16,0,0,0,40,48V216a16,16,0,0,0,16,16H200a16,16,0,0,0,16-16V48A16,16,0,0,0,200,32Zm-72,0a32,32,0,0,1,32,32H96A32,32,0,0,1,128,32Zm72,184H56V48H82.75A47.93,47.93,0,0,0,80,64v8a8,8,0,0,0,8,8h80a8,8,0,0,0,8-8V64a47.93,47.93,0,0,0-2.75-16H200Z"></path></svg>
+                                </div>
+                                <span class="section__tab-text">Invoices</span>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="dropdown__tab">
+                        <button type="button" class="dropdown-btn">
+                            <div class="tab__icon-text">
+                                <div class="section__tab-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M28,128a8,8,0,0,1,0-16H56a8,8,0,0,0,0-16H40a24,24,0,0,1,0-48,8,8,0,0,1,16,0h8a8,8,0,0,1,0,16H40a8,8,0,0,0,0,16H56a24,24,0,0,1,0,48,8,8,0,0,1-16,0ZM232,56V192a16,16,0,0,1-16,16H40a16,16,0,0,1-16-16V152a8,8,0,0,1,16,0v40H160V160H80a8,8,0,0,1,0-16h80V112H104a8,8,0,0,1,0-16H216V64H96a8,8,0,0,1,0-16H224A8,8,0,0,1,232,56Zm-56,88h40V112H176Zm40,48V160H176v32Z"></path></svg>
+                                </div>
+                                <span class="section__tab-text">Payrolls</span>
+                            </div>
+                        </button>
+                    </div>                                  
+                </div>
+            </div>
+            <div class="collapsed-divider"></div>
+            <div class="account-user__cntnr">
+                <button type="button" class="account-user">
+                    <div class="user__profile-pic">
+                        <p class="user__profile-placeholder">0</p>
+                        <div class="user-notifs__cntnr">
+                            <p>99+</p>
+                        </div>
+                    </div>
+                    <div class="user__name-position">
+                        <p class="username">Opare Kwakye Jeffrey</p>
+                        <p class="user-position">Administrator</p>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </aside>
+    <main>
+        <section class="search-inventory-sctn">
+            <div class="search-form__cntnr">
+                <form class="search-form" action="">
+                    <input type="search" placeholder="Search tenants, users, inventory...">
+                    <button class="inventory-search__btn" type="submit">Search</button>
+                </form>
+            </div>
+        </section>
+        <h2 class="active-tab__name">Dashboard</h2>
+        <section class="metric-cards-sctn section">
+            <h3 class="section-name">Payroll Summary</h3>
+            <div class="cards__cntnr">
+                <div class="card">
+                    <div class="card__icon part">
+                        <div class="icon__cntnr">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M244.24,60a8,8,0,0,0-7.75-.4c-42.93,21-73.59,11.16-106,.78-34-10.89-69.25-22.14-117.95,1.64A8,8,0,0,0,8,69.24V189.17a8,8,0,0,0,11.51,7.19c42.93-21,73.59-11.16,106.05-.78,19.24,6.15,38.84,12.42,61,12.42,17.09,0,35.73-3.72,56.91-14.06a8,8,0,0,0,4.49-7.18V66.83A8,8,0,0,0,244.24,60ZM232,181.67c-40.6,18.17-70.25,8.69-101.56-1.32-19.24-6.15-38.84-12.42-61-12.42a122,122,0,0,0-45.4,9V74.33c40.6-18.17,70.25-8.69,101.56,1.32S189.14,96,232,79.09ZM128,96a32,32,0,1,0,32,32A32,32,0,0,0,128,96Zm0,48a16,16,0,1,1,16-16A16,16,0,0,1,128,144ZM56,96v48a8,8,0,0,1-16,0V96a8,8,0,1,1,16,0Zm144,64V112a8,8,0,1,1,16,0v48a8,8,0,1,1-16,0Z"></path></svg>
+                        </div>
+                    </div>
+                    <div class="card__data part">
+                        <div class="data__cntnr">
+                            <p class="data__type">Total Items</p>
+                            <div class="analytics-cntnr">
+                                <p><span class="data__qnty">1390</span></p>
+                                <p><span class="data__analytics">+16%</span> this month</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__icon part">
+                        <div class="icon__cntnr">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M240,56v64a8,8,0,0,1-16,0V75.31l-82.34,82.35a8,8,0,0,1-11.32,0L96,123.31,29.66,189.66a8,8,0,0,1-11.32-11.32l72-72a8,8,0,0,1,11.32,0L136,140.69,212.69,64H168a8,8,0,0,1,0-16h64A8,8,0,0,1,240,56Z"></path></svg>
+                        </div>
+                    </div>
+                    <div class="card__data part">
+                        <div class="data__cntnr">
+                            <p class="data__type">Inventory Value</p>
+                            <div class="analytics-cntnr">
+                                <p>$<span class="data__qnty">44500</span></p>
+                                <p><span class="data__analytics">-34%</span> this month</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__icon part">
+                        <div class="icon__cntnr">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M72,104a8,8,0,0,1,8-8h96a8,8,0,0,1,0,16H80A8,8,0,0,1,72,104Zm8,40h96a8,8,0,0,0,0-16H80a8,8,0,0,0,0,16ZM232,56V208a8,8,0,0,1-11.58,7.15L192,200.94l-28.42,14.21a8,8,0,0,1-7.16,0L128,200.94,99.58,215.15a8,8,0,0,1-7.16,0L64,200.94,35.58,215.15A8,8,0,0,1,24,208V56A16,16,0,0,1,40,40H216A16,16,0,0,1,232,56Zm-16,0H40V195.06l20.42-10.22a8,8,0,0,1,7.16,0L96,199.06l28.42-14.22a8,8,0,0,1,7.16,0L160,199.06l28.42-14.22a8,8,0,0,1,7.16,0L216,195.06Z"></path></svg>
+                        </div>
+                    </div>
+                    <div class="card__data part">
+                        <div class="data__cntnr">
+                            <p class="data__type">Potential Profit</p>
+                            <div class="analytics-cntnr">
+                                <p>$<span class="data__qnty">6320</span></p>
+                                <p><span class="data__analytics">+26.3%</span> this month</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__icon part">
+                        <div class="icon__cntnr">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M236.8,188.09,149.35,36.22h0a24.76,24.76,0,0,0-42.7,0L19.2,188.09a23.51,23.51,0,0,0,0,23.72A24.35,24.35,0,0,0,40.55,224h174.9a24.35,24.35,0,0,0,21.33-12.19A23.51,23.51,0,0,0,236.8,188.09ZM222.93,203.8a8.5,8.5,0,0,1-7.48,4.2H40.55a8.5,8.5,0,0,1-7.48-4.2,7.59,7.59,0,0,1,0-7.72L120.52,44.21a8.75,8.75,0,0,1,15,0l87.45,151.87A7.59,7.59,0,0,1,222.93,203.8ZM120,144V104a8,8,0,0,1,16,0v40a8,8,0,0,1-16,0Zm20,36a12,12,0,1,1-12-12A12,12,0,0,1,140,180Z"></path></svg>
+                        </div>
+                    </div>
+                    <div class="card__data part">
+                        <div class="data__cntnr">
+                            <p class="data__type">Low Stock Alerts</p>
+                            <div class="analytics-cntnr">
+                                <p><span class="data__qnty">30</span></p>
+                                <p><span class="data__analytics"></span>Items need attention</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="inventory-overview-sctn section">
+            <div class="section__name-brief">
+                <h3 class="section-name">All Products</h3>
+                <p>Complete inventory overview with stock levels and profitability</p>
+            </div>
+            <div class="product-overview-cards__cntnr">
+                <button type="button" class="product-overview-card">
+                    <div class="overview-row-cntnr">                    
+                        <div class="overview-name__cntnr">
+                            <div class="overview-name-id">
+                                <p class="overview-prod-name">Widget Pro</p>
+                                <p class="overview-prod-id">WP-001</p>
+                            </div>
+                        </div>
+                        <div class="overview-prod-category__cntnr">
+                            <div class="overview-prod-category">
+                                <p>Electronics</p>
+                            </div>
+                        </div>
+                        <div class="overview-threshold">
+                            <p>120 units in stock</p>
+                            <p>Restock at 150</p>
+                        </div>
+                        <div class="overview-prod-cost">
+                            <p>GHS200.00</p>
+                            <p>Cost</p>
+                        </div>
+                        <div class="overview-prod-profit">
+                            <div class="overview-profit">
+                                <div class="overview-bull-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M205.66,117.66a8,8,0,0,1-11.32,0L136,59.31V216a8,8,0,0,1-16,0V59.31L61.66,117.66a8,8,0,0,1-11.32-11.32l72-72a8,8,0,0,1,11.32,0l72,72A8,8,0,0,1,205.66,117.66Z"></path></svg>
+                            </div>
+                            <p><span>GHS428.00</span> profit</p>
+                            </div>
+                            <div class="overview-prod-sold">
+                                <p>GHS628.00</p>
+                            </div>
+                        </div>
+                        <div class="overview-row__stock-level">
+                            <div class="row-stock-level">
+                                <p>Low</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="overview-col-cntnr">
+                        <div class="overview-profit">
+                            <div class="overview-bull-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M205.66,117.66a8,8,0,0,1-11.32,0L136,59.31V216a8,8,0,0,1-16,0V59.31L61.66,117.66a8,8,0,0,1-11.32-11.32l72-72a8,8,0,0,1,11.32,0l72,72A8,8,0,0,1,205.66,117.66Z"></path></svg>
+                            </div>
+                            <p><span>GHS428.00</span> profit</p>
+                        </div>
+                        <div class="overview-stock-count">
+                            <div class="stock-count">
+                                <div class="stock-level__cntnr">
+                                    <div class="stock-level__bar"></div>
+                                </div>
+                            </div>
+                            <div class="stock-labels">
+                                <p><span>120</span> in stock</p>
+                                <p>reorder at 150</p>
+                            </div>
+                        </div>
+                    </div>
+                </button>
+                <button type="button" class="product-overview-card">
+                    <div class="overview-row-cntnr">                    
+                        <div class="overview-name__cntnr">
+                            <div class="overview-name-id">
+                                <p class="overview-prod-name">Tool Elite</p>
+                                <p class="overview-prod-id">TE-003</p>
+                            </div>
+                        </div>
+                        <div class="overview-prod-category__cntnr">
+                            <div class="overview-prod-category">
+                                <p>Tools</p>
+                            </div>
+                        </div>
+                        <div class="overview-threshold">
+                            <p>850 units in stock</p>
+                            <p>Restock at 200</p>
+                        </div>
+                        <div class="overview-prod-cost">
+                            <p>GHS120.00</p>
+                            <p>Cost</p>
+                        </div>
+                        <div class="overview-prod-profit">
+                            <div class="overview-profit">
+                                <div class="overview-bull-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M205.66,117.66a8,8,0,0,1-11.32,0L136,59.31V216a8,8,0,0,1-16,0V59.31L61.66,117.66a8,8,0,0,1-11.32-11.32l72-72a8,8,0,0,1,11.32,0l72,72A8,8,0,0,1,205.66,117.66Z"></path></svg>
+                            </div>
+                            <p><span>GHS15.00</span> profit</p>
+                            </div>
+                            <div class="overview-prod-sold">
+                                <p>GHS135.00</p>
+                            </div>
+                        </div>
+                        <div class="overview-row__stock-level">
+                            <div class="row-stock-level">
+                                <p>Low</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="overview-col-cntnr">
+                        <div class="overview-profit">
+                            <div class="overview-bull-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M205.66,117.66a8,8,0,0,1-11.32,0L136,59.31V216a8,8,0,0,1-16,0V59.31L61.66,117.66a8,8,0,0,1-11.32-11.32l72-72a8,8,0,0,1,11.32,0l72,72A8,8,0,0,1,205.66,117.66Z"></path></svg>
+                            </div>
+                            <p><span>GHS15.00</span> profit</p>
+                        </div>
+                        <div class="overview-stock-count">
+                            <div class="stock-count">
+                                <div class="stock-level__cntnr">
+                                    <div class="stock-level__bar"></div>
+                                </div>
+                            </div>
+                            <div class="stock-labels">
+                                <p><span>850</span> in stock</p>
+                                <p>reorder at 200</p>
+                            </div>
+                        </div>
+                    </div>
+                </button>
+            </div>
+        </section>
+        <dialog id="product-details-dialog" class="product-details-dialog">
+            <form method="dialog">
+                <div class="dialog-header">
+                    <h2 class="dialog-title">Product Details</h2>
+                    <button type="submit" class="close-dialog-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#000000" viewBox="0 0 256 256"><path d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"></path></svg>
+                    </button>
+                </div>
+                <div class="dialog-content">
+                    <div class="dialog-product-info">
+                        <h3 class="product-name"></h3>
+                        <p class="product-id"></p>
+                        <div class="product-profit">
+                            <div class="profit-icon"></div>
+                            <p class="profit-amount"></p>
+                        </div>
+                    </div>
+                    <div class="dialog-stock-info">
+                        <div class="stock-level">
+                            <div class="stock-bar"></div>
+                        </div>
+                        <div class="stock-details">
+                            <p class="stock-count"></p>
+                            <p class="reorder-level"></p>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </dialog>
+        <section class="perf-metric-sctn section">
+            <div class="section__name-brief">
+                <h3 class="section-name">Stock Levels</h3>
+                <p>Monitor inventory distribution</p>
+            </div>
+            <div class="perf_metrics__section">
+                <div class="perf-metrics__cntnr">
+                    <div class="perf-metric_card">
+                        <div class="top_section">
+                            <h3>Avg. Approval Time</h3>
+                            <p class="perf-metric__value" data-target-value="2.4" data-unit="hours">0</p>
+                        </div>
+                        <div class="bottom_section">
+                            <div class="progressbar_container">
+                                <div class="progressbar"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="perf-metric_card">
+                        <div class="top_section">
+                            <h3>User Satisfaction</h3>
+                            <p class="perf-metric__value" data-target-value="94" data-unit="%">0</p>
+                        </div>
+                        <div class="bottom_section">
+                            <div class="progressbar_container">
+                                <div class="progressbar"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="perf-metric_card">
+                        <div class="top_section">
+                            <h3>Platform Uptime</h3>
+                            <p class="perf-metric__value" data-target-value="99.8" data-unit="%">0</p>
+                        </div>
+                        <div class="bottom_section">
+                            <div class="progressbar_container">
+                                <div class="progressbar"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="perf-metric_card">
+                        <div class="top_section">
+                            <h3>Response Rate</h3>
+                            <p class="perf-metric__value" data-target-value="87" data-unit="%">0</p>
+                        </div>
+                        <div class="bottom_section">
+                            <div class="progressbar_container">
+                                <div class="progressbar"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script type="module" src="./src/script.js"></script>
+</body>
+</html>
