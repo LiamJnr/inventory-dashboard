@@ -25,12 +25,29 @@ export function sidebarFunction(){
         });
 
         // Close dropdown when clicking outside this container
+        // document.addEventListener('click', e => {
+        //     if (!container.contains(e.target)) {
+        //         const openedDropdown = container.querySelector('.open');
+
+        //         if(openedDropdown){
+        //             openedDropdown.classList.remove('open');
+        //         }
+        //         arrowIcons.forEach(icon => icon.classList.remove('rotate'));
+        //     }
+        // });
+
         document.addEventListener('click', e => {
-            if (!container.contains(e.target)) {
-                const openedDropdown = container.querySelector('.open');
-                openedDropdown.classList.remove('open');
-                arrowIcons.forEach(icon => icon.classList.remove('rotate'));
-            }
+            dropdownContainers.forEach(container => {
+
+                if (!container.contains(e.target)) {
+                    const openedDropdown = container.querySelector('.open');
+                    if (openedDropdown) {
+                    openedDropdown.classList.remove('open');
+                    }
+                    const icons = container.querySelectorAll('.dropdown-icon');
+                    icons.forEach(icon => icon.classList.remove('rotate'));
+                }
+            });
         });
     });
 
